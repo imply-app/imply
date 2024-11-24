@@ -17,27 +17,18 @@
   <img src="/public/screenshot.png"/>
 </p>
 
-#
+## Increase Efficiency, Reduce Costs
 
-## Why Imply?
+Imply streamlines your tools and improves data flow, saving you time and resources. Say goodbye to software bloat and data silos.
 
-Imply fits any workflow, making it easy for teams to stay organized. It brings all your important apps together in one place, helping you work better and faster.
+- **Unified Platform**: All your essential tools in one place—no more switching between apps.
+- **Real-Time Collaboration**: Work with your team seamlessly, wherever they are.
+- **Flexible Workflows**: Adapt Imply to fit your team’s unique needs.
 
-No more wasting money on unnecessary software or dealing with data silos!
-
-## Features
-
-### For Teams:
-
-- All Your Tools in One Place
-- Real-Time Collaboration
-- Adaptable to Any Workflow
-
-### For Developers:
+## Third-party apps
 
 - **Built with Familiar Technology**: Vanilla JS, React, Vite, and more. We focus on providing a great developer experience. For more information, see [Build Your First App](./docs/BUILD_YOUR_FIRST_APP.md).
-- **Pre-Made Modules**: Think authentication, real-time features, data management, and caching.
-- **Create Internal Tools Easily**: Have an itch? Learn to create your own solutions in just 30 minutes.
+- **Battery included**: Think authentication, real-time features, data management, and caching.
 
 ## Performance
 
