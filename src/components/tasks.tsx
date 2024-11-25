@@ -13,7 +13,7 @@ export type RunningTask = {
 } & RunningTaskData;
 
 export const [tasks, setTasks] = createSignal<RunningTask[]>([]);
-export const [newTaskHint, setNewTaskHint] = createSignal(false);
+
 export const sortedTasks = () =>
   tasks().sort((a, b) => b.date.getTime() - a.date.getTime());
 export function addTask(data: RunningTaskData) {
@@ -26,7 +26,6 @@ export function addTask(data: RunningTaskData) {
 
   batch(() => {
     setTasks([...tasks(), task as RunningTask]);
-    setNewTaskHint(true);
   });
   return id;
 }
