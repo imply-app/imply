@@ -505,13 +505,6 @@ export const onUIReady = async (id: string, shadowRoot: ShadowRoot) => {
   }
 };
 
-export const proxyFetch = async (url: string) => {
-  const proxyPath = `/proxy?url=${encodeURIComponent(url)}`;
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Cannot fetch ${proxyPath}`);
-  return await response.text();
-};
-
 const fetchResource = async (resolvePath: ResolvePath, path: string) => {
   const absolutePath = resolvePath(path);
   return proxyFetch(absolutePath);
@@ -601,11 +594,20 @@ export const getResolvePathFunction = (index: string) => {
   };
 };
 
+export const proxyFetch = async (url: string) => {
+  // const proxyPath = `/proxy?url=${encodeURIComponent(url)}`;
+  const proxyPath = url;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Cannot fetch ${proxyPath}`);
+  return await response.text();
+};
+
 const fetchIndex = async (indexPath: string) => {
-  const proxyPath = `/proxy?url=${encodeURIComponent(indexPath)}`;
-  let compiledResult: CompileResult;
+  const proxyPath = indexPath;
   const response = await fetch(proxyPath);
   if (!response.ok) throw new Error("Cannot fetch index");
+
+  let compiledResult: CompileResult;
   const html = await response.text();
   console.log("html", html);
   compiledResult = compile(html);
