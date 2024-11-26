@@ -45,29 +45,14 @@ export default function Layout(props: { children?: JSX.Element }) {
 
           <div class="flex-1 overflow-hidden">{props.children}</div>
 
-          <div class="bg-neutral-930 border-t text-xs flex-none flex items-center">
-            <DropdownMenu
-            // onOpenChange={() => {
-            //   setNewTaskHint(false);
-            // }}
-            >
+          <div class="bg-neutral-930 border-t text-xs flex-none flex items-center flex-row-reverse">
+            <DropdownMenu>
               <DropdownMenu.Trigger class="py-1 px-2 select-none flex items-center space-x-1 text-neutral-500 hover:text-white duration-150">
                 <BsBellFill class="w-3 h-3" />
                 <div class="max-w-28 truncate">
                   {sortedTasks().at(0)?.description ?? "All clear"}
                 </div>
               </DropdownMenu.Trigger>
-
-              {/* <DropdownMenu.Trigger class="dropdown-menu__trigger relative"> */}
-              {/* <Show when={newTaskHint()}>
-            <span class="absolute z-[50] -right-2 -top-2 h-4 w-4 rounded-full bg-blue-400" />
-            <span class="absolute z-[50] blur -right-2 -top-2 h-4 w-4 rounded-full bg-blue-400 opacity-50 "></span>
-          </Show>
-
-          <DropdownMenu.Icon class=" flex items-center justify-center" as="div">
-            <BsBellFill class="w-6 h-6" />
-          </DropdownMenu.Icon> */}
-              {/* </DropdownMenu.Trigger> */}
 
               <DropdownMenu.Portal>
                 <DropdownMenu.Content class="dropdown-menu__content max-h-60 overflow-auto nice-scrollbar">

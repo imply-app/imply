@@ -18,7 +18,7 @@ export default createHandler(() => (
             content="Imply | All-in-one team platform"
           />
           <meta property="og:description" content="All-in-one team platform" />
-          <meta property="og:image" content="https://imply.app/banner.svg" />
+          <meta property="og:image" content="https://imply.app/og.png" />
           <meta property="og:image:alt" content="All-in-one team platform" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="600" />
@@ -27,7 +27,7 @@ export default createHandler(() => (
           <meta property="og:url" content="https://imply.app" />
           <meta
             property="og:image:secure_url"
-            content="https://imply.app/banner.svg"
+            content="https://imply.app/og.png"
           />
           <meta property="og:image:type" content="image/png" />
           <meta property="og:locale" content="en_US" />
@@ -38,7 +38,7 @@ export default createHandler(() => (
             content="Imply | All-in-one team platform"
           />
           <meta name="twitter:description" content="All-in-one team platform" />
-          <meta name="twitter:image" content="https://imply.app/banner.svg" />
+          <meta name="twitter:image" content="https://imply.app/og.png" />
           <meta name="twitter:image:alt" content="All-in-one team platform" />
           <meta name="twitter:site" content="@tri2820" />
           <meta name="twitter:creator" content="@tri2820" />
