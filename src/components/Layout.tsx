@@ -9,10 +9,10 @@ import AppBar from "./AppBar";
 import { sortedTasks } from "./tasks";
 
 export default function Layout(props: { children?: JSX.Element }) {
-  const [betaBannerShow, setBetaBannerShow] = createSignal(false);
-  onMount(() => {
-    setBetaBannerShow(window.location.hostname === "imply.app");
-  });
+  // const [betaBannerShow, setBetaBannerShow] = createSignal(false);
+  // onMount(() => {
+  //   setBetaBannerShow(window.location.hostname === "imply.app");
+  // });
 
   return (
     <Tabs
@@ -26,7 +26,7 @@ export default function Layout(props: { children?: JSX.Element }) {
       <AppBar />
       <div class="relative h-screen flex-1">
         <div class="h-full v-main flex flex-col border overflow-hidden">
-          <Show when={betaBannerShow()}>
+          {/* <Show when={betaBannerShow()}>
             <div class="rounded p-1 m-2 text-sm bg-neutral-800 text-center">
               <p>
                 imply.app is in beta. Check{" "}
@@ -41,7 +41,7 @@ export default function Layout(props: { children?: JSX.Element }) {
                 for latest updates.
               </p>
             </div>
-          </Show>
+          </Show> */}
 
           <div class="flex-1 overflow-hidden">{props.children}</div>
 
