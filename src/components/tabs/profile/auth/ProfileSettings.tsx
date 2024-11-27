@@ -133,7 +133,7 @@ export default function ProfileSettings() {
                     <div class="w-40 h-40 rounded-full  border overflow-hidden">
                       <img
                         src="/default-avatar.svg"
-                        class="min-w-full min-h-full bg-neutral-930 p-8"
+                        class="min-w-full min-h-full bg-neutral-930"
                       />
                     </div>
 

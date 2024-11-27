@@ -33,8 +33,7 @@ declare global {
     readme: string;
     categories: string[];
     author_name: string;
-    icon: IconTypes;
-    backgroundColor: `#${string}`;
+    icon: string;
     index: string;
   };
 

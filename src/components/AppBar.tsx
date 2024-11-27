@@ -77,10 +77,14 @@ export default function AppBar() {
 
       <div class="pl-[1px]">
         <TabTrigger id="add">
-          <BsPlusLg class="w-6 h-6 " />
+          <div class="p-2">
+            <BsPlusLg class="w-6 h-6 " />
+          </div>
         </TabTrigger>
         <TabTrigger id="profile">
-          <BsPersonFill class="w-6 h-6 " />
+          <div class="p-2">
+            <BsPersonFill class="w-6 h-6 " />
+          </div>
         </TabTrigger>
 
         <For each={enabledInstallations()}>
@@ -89,7 +93,7 @@ export default function AppBar() {
             if (!app) return <></>;
             return (
               <TabTrigger id={ins.id}>
-                <app.icon class="w-6 h-6" />
+                <img src={app.icon} class="w-10 h-10" />
               </TabTrigger>
             );
           }}

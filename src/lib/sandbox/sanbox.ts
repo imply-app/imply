@@ -9,6 +9,8 @@ import {
   proxyFetch,
 } from "~/components/apps";
 import { transform } from "./transform";
+import { createSignal } from "solid-js";
+import { profile } from "~/global";
 
 declare global {
   interface Window {
@@ -123,6 +125,10 @@ export class Sandbox {
       __options__: true,
       id: this.id,
       globals: {
+        imply: {
+          users: [],
+          profile,
+        },
         imply_dynamic_importport_meta: {
           url: (specifier: string) => {
             const url = new URL(specifier, "http://localhost:5173").toString();

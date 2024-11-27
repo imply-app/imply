@@ -1,22 +1,8 @@
 import { tx } from "@instantdb/core";
-import {
-  BsEnvelopeAtFill,
-  BsGearFill,
-  BsIncognito,
-  BsPencilFill,
-  BsPenFill,
-  BsTelephoneFill,
-  BsX,
-  BsXLg,
-} from "solid-icons/bs";
-import { createEffect, createSignal, For, Show } from "solid-js";
-import { Dynamic } from "solid-js/web";
-import { db, Profile } from "~/components/database";
-import { profile, user } from "~/global";
-import { Dialog } from "@kobalte/core/dialog";
-import { createStore } from "solid-js/store";
-import { code, email, setCode } from "./authflow";
+import { createSignal, Show } from "solid-js";
 import Button from "~/components/Button";
+import { db } from "~/components/database";
+import { code, email, setCode } from "./authflow";
 
 export default function RequireCode() {
   const [error, setError] = createSignal("");

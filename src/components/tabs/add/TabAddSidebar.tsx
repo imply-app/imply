@@ -77,7 +77,7 @@ export default function TabAddSidebar() {
                 data-selected={selectedAppId() == m.id}
                 class="flex items-start cursor-pointer space-x-4 px-4 py-4 v-hover-highlight"
               >
-                <Icon m={m} size="md" />
+                <Icon src={m.icon} size="md" />
 
                 <div class="flex-1 space-y-1">
                   <div class="font-bold line-clamp-1 leading-none">
